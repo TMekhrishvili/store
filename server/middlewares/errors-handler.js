@@ -1,6 +1,3 @@
-const errorHandler = async (err, req, res, next) => {
-    console.log(err)
-    return res.status(500).json({ message: 'Something went wrong, please try again' })
-}
+const errorHandler = async (err, req, res, next) => res.status(500).json({ message: 'Something went wrong.' });
 
-module.exports = errorHandler;
+module.exports = errorHandler
